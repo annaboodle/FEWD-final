@@ -1,0 +1,38 @@
+// PSEUDOCODE
+
+// VARIABLES
+lives-remaining = 3;
+icicles-dodged = 0;
+
+// MOVEMENT
+if left arrow is pressed, 
+	move left
+if right arrow is pressed, 
+	move right
+
+// ICICLES
+every X seconds,
+	icicle appears at random location at top of gamespace
+	icicle moves down with X speed
+if icicle reaches bottom of gamespace, 
+	disappears
+	add 1 to icicles-dodged
+
+// COLLISION
+if player touches icicle, 
+	icicle disappears
+	subtract 1 from lives-remaining
+
+// GAME OVER
+if lives-remaining = 0,
+	alert that game is over, state number of icicles-dodged
+	reset game (reset variables, put player back at starting location)
+
+
+
+
+
+// POTENTIALLY TO ADD: 
+something happens when hit with icicle- player flashes red?
+speed up icicle generation over time
+some things could fall that are good to "catch" (extra lives)
